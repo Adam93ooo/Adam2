@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="traitement.php" autocomplete="off" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Civivilté:</legend>
+            <label for="m"> Masculin</label>
+            <input type="radio" id="m" name="genre"/><br/>
+            <label for="f">Féminin</label>
+            <input type="radio" id="f" name="genre" checked /><br/>
+        </fieldset>
+        <label for="code">Code*</label>
+        <input type="text" readonly id="code" name="code" value="100025"/><br/>
+        <label for="login">Login*</label>
+        <input type="text" required id="login" name="login" placeholder="Entrez votre login svp" value=""/><br/>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="16" max="150" placeholder="Veuiielz entrer votre âge svp"/><br/>
+        <label for="mdp" >Mot de passe</label>
+        <input type="password" pattern="[a-z]{5}" id="mdp" name="mdp"><br/>
+        <fieldset>
+            <legend>Modules préférés</legend>
+            <label for="html">Html5</label>
+            <input type="checkbox" name="html" id="html" checked /><br/>
+            <label for="css">Css3</label>
+            <input type="checkbox" name="css" id="css"/><br/>
+            <label for="js">Javascript</label>
+            <input type="checkbox" name="js" id="js"/><br/>
+            <label for="sql">Sql</label>
+            <input type="checkbox" name="sql" id="sql"/><br/>
+            <label for="php">Php</label>
+            <input type="checkbox" name="php" id="php"/><br/>
+        </fieldset>
+        <select name="loisir" id="loisir" multiple>
+            <option value="loisir">Choisir votre loisir</option>
+            <option value="lecture">Lecture</option>
+            <option value="voyage">Voyages</option>
+            <option value="sport">Sport</option>
+        </select><br/>
+        <input type="date" name="" id="">
+        <input type="file" name="photo" id="photo">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="50" rows="6"></textarea><br/>
+        <input type="reset" value="Annuler"/>
+        <input type="submit" value="Soumettre"/>
+    </form>
+</body>
+</html>
