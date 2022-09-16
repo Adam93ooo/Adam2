@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--////////////////////////Tableau//////////////////////////-->
+    <table border="1">
+        <caption> Conjugaisons</caption>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th colspan="2">premier groupe</th>
+                <th colspan="2">Deuxième groupe</th>
+            </tr>
+
+
+        </thead>
+        <tbody>
+            <tr>
+                <th></th>
+                <th>Personne</th>
+                <th>Singulier</th>
+                <th>Pluriel</th>
+                <th>Singulier</th>
+                <th>Pluriel</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Présent</th>
+                <th>1</th>
+                <td>je mange</td>
+                <td>nous mangeons</td>
+                <td>je finis </td>
+                <td>nous finissons</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>tu manges</td>
+                <td>vous mangez</td>
+                <td>tu finis</td>
+                <td>vous finissez</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>il mange</td>
+                <td>ils mangent</td>
+                <td>il finit</td>
+                <td>ils finissent</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--////////////////////////Formulaire//////////////////////////-->
+
+    <h1>Formulaire</h1>
+    <form action="magym.com/inscription.php">
+        <p><label for="nom">NOM</label><br />
+            <input type="text" name="nom" id="nom" />
+        </p>
+        <fieldset>
+            <legend>Civilité</legend>
+            <label for="m">Masculin</label>
+            <input type="radio" name="genre" id="m" /><br />
+            <label for="f">Féminin</label>
+            <input type="radio" name="genre" id="f" />
+        </fieldset>
+        <fieldset>
+            <legend>Activités</legend>
+            <label for="karate">Karaté</label>
+            <input type="checkbox" name="sport" id="karate" /><br />
+            <label for="judo">Judo</label>
+            <input type="checkbox" name="sport" id="judo" /><br />
+            <label for="Remise en forme">Remise en forme</label>
+            <input type="checkbox" name="sport" id="remise en forme" />
+        </fieldset>
+        <p><input type="submit" value="Soumettre" /></p>
+
+
+
+
+    </form>
+</body>
+
+</html>

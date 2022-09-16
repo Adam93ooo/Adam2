@@ -1,0 +1,58 @@
+body {
+    color: black;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#titre {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -40px;
+}
+#pond1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80px;
+}
+    
+#header1 {
+    background-color: rgb(164, 164, 211);
+    background-image: url(img.jpg);
+}
+#article1 {
+    background-color: beige;
+    color: black;
+    width: 1000px;
+    height: 200px;
+}
+#article2 {
+    background-color: rgb(117, 83, 83);
+    color: black;
+    width: 1000px;
+    height: 200px;
+}
+aside {
+    width: 45%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
