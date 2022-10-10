@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<title>Manipuler les chaines de caractères</title>
+	 <meta charset="utf-8">
+</head>
+<body>
+  <div >
+    <p contenteditable="true" id="chaine1" >Salut</p>
+    <button onclick="str_fisrt_letter(document.getElementById('chaine1').innerHTML)">Essayer</button>
+    <p id="res1"></p>
+  </div>
+  <div >
+    <p contenteditable="true" id="chaine2" >adresse@</p>
+    <button onclick="str_email(document.getElementById('chaine2').innerHTML)">Essayer</button>
+    <p id="res2"></p>
+  </div>
+  <div >
+    <p contenteditable="true" id="chaine3" >adam93</p>
+    <button onclick="str_number(document.getElementById('chaine3').innerHTML)">Essayer</button>
+    <p id="res3"></p>
+  </div>
+  <div >
+    <p contenteditable="true" id="chaine4" >Créteil94000</p>
+    <button onclick="str_replace(document.getElementById('chaine4').innerHTML)">Essazyer</button>
+    <p id="res4"></p>
+  </div>
+  <script src="Ex1 (4).js"></script>
+</body>
+</html>
