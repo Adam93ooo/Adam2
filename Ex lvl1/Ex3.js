@@ -1,6 +1,0 @@
-var userage = prompt("Entrer votre age")
-if ( userage <= 0 || userage > 150)
-alert("Age non valide ressaisir votre âge")
-userage = prompt("Entrer votre age")
-if ( userage <= 0 || userage > 150)
-alert(userage+ "non valide")
