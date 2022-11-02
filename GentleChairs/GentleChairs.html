@@ -7,16 +7,23 @@
     <title>GentleChairs</title>
     <link rel="stylesheet" href="GentleChairs.css">
     <link rel="icon" type="image/png" href="logo12.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
     <header>
-        <nav>
-            <h1>GentleChairs</h1>
-            <div class="right">
-                <p>Chaises Gaming</p>
-                <p>Éditions Spéciale</p>
-                <p>Accessoires</p>
+        <nav class="navbar">
+            <a href="#" class="logo">GENTLECHAIRS</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Chaises Gaming</a></li>
+                    <li><a href="#">Éditions Spéciale</a></li>
+                    <li><a href="#">Accessoires</a></li>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                </ul>
             </div>
+            <img src="menu-btn.png" alt="hamburger" class="menu-hamburger">
         </nav>
         <section class="presentation first">
             <div class="product-presentation">
@@ -53,6 +60,40 @@
             <img src="4.png"/>
         </div>
     </section>
+<!---------- Avis ---------->
+    <section class="testimonials">
+        <h1>Avis clients</h1>
+        <p>Découvrez nos meilleurs avis et passez le cap</p>
+            <div class="roww">
+                <div class="testimonial-col">
+                    <img src="Jean.png">
+                    <div> 
+                        <p>Très bonne chaise qui vaut sont prix, malgré un défaut sur un accoudoir heureusement pris en charge par la garantie. SAV efficace.</p>
+                        <h3>Jean</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="Benoit.png">
+                    <div>
+                        <p>J'ai bien reçu ma commande, le delais a ete tres rapide et le carton protégés parfaitement la chaise.
+                            Suite à une erreur de ma part, j'ai commandés des accessoires qui etaient dejà livrés avec la chaise, apres avoir envyé un message, j'ai reçu immediatement une etiquette pour renvoyer le colis. Merci à vous, votre service est parfait.</p>
+                        <h3>Benoit</h3>
+                        <i class="fa fa-star"></i>                        
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+<!-------- footer ---------->
     <footer>
         <div class="column">
             <h3>INFORMATIONS</h3>
@@ -65,6 +106,7 @@
             <p>FAQ</p>
             <p>Avis clients</p>
             <p>Blog</p>
+            <p>Contact</p>
         </div>
         <div class="column">
             <h3>LIENS RAPIDES</h3>
@@ -74,4 +116,12 @@
         </div>
     </footer>
 </body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </html>

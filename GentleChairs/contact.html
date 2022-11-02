@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AkiStreet</title>
+<link rel="stylesheet" href="GentleChairs.css">
+<link rel="icon" type="image/png" href="logo12.png">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">GENTLECHAIRS</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Chaises Gaming</a></li>
+                    <li><a href="#">Éditions Spéciale</a></li>
+                    <li><a href="#">Accessoires</a></li>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                </ul>
+            </div>
+            <img src="menu-btn.png" alt="hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    
+<!------- Contactez-nous ------->      
+    
+    <section class="location">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Rue de la Purée</h5>
+                            <p>Bobigny, France</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>0616820354</h5>
+                            <p>Du lundi au dimanche de 10h à 18h</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>GentleChairs@gmail.com</h5>
+                            <p>Envoyez-nous votre demande par e-mail</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form method="post" action="contact-form-handler.php">
+                    <input type="text" name="name" placeholder="Entrez votre nom" required>
+                    <input type="email" name="email" placeholder="Entrez votre email " required>
+                    <input type="text" name="subject" placeholder="Objet" required>
+                    <textarea rows="8" name="message" placeholder="Votre demande" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Valider</button>
+                    </form> 
+                </div>
+            </div>
+    </section>
+    
+<!-------- footer ---------->
+
+<footer>
+    <div class="column">
+        <h3>INFORMATIONS</h3>
+        <p>Suivre ma commande</p>
+        <p>GentleChairs@gmail.com</p>
+        <p>Si vous avez des questions ou un <br/>besoin particulier n'hésitez pas à nous<br/> contacter par mail à GentleChairs@gmail.com</p>
+    </div>
+    <div class="column">
+        <h3>INFOS</h3>
+        <p>FAQ</p>
+        <p>Avis clients</p>
+        <p>Blog</p>
+        <p>Contact</p>
+    </div>
+    <div class="column">
+        <h3>LIENS RAPIDES</h3>
+        <p>Conditions Générales d'Utilisation</p>
+        <p>Politique de confidentialité</p>
+        <p>Conditions générales de vente</p>
+    </div>
+</footer>
+  
+    
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>    
