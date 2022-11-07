@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GentleChairs</title>
+    <link rel="stylesheet" href="GentleChairs.css">
+    <link rel="icon" type="image/png" href="logo12.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">GENTLECHAIRS</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Chaises Gaming</a></li>
+                    <li><a href="#">Éditions Spéciale</a></li>
+                    <li><a href="#">Accessoires</a></li>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                </ul>
+            </div>
+            <img src="menu-btn.png" alt="hamburger" class="menu-hamburger">
+        </nav>
+        <section class="presentation first">
+            <div class="product-presentation">
+                <h1>Vous achetez plus qu'une chaise, Vous achetez une histoire.</h1>
+                <p>GentleChairs offre un confort optimal à quiconque passe beaucoup de temps au bureau. 
+                   Inspiré des voitures les plus exclusives au monde, GentleChairs associe l'ergonomie la plus moderne à un design inspiré par l'esport pour les personnes exigeantes.</p>
+                <button>Acheter Maintenant</button>
+                <div class="small-images">
+                    <div class="small">
+                        <img src="1.png"/>
+                    </div>
+                    <div class="small">
+                        <img src="2.png"/>
+                    </div>
+                    <div class="small">
+                        <img src="3.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="image-presentation">
+                <img src="hero.png"/>
+            </div>
+        </section>
+    </header>
+    <section class="presentation second">
+        <div class="product-presentation">
+            <p class="new">Nouvelle Collection Disponible</p>
+            <h1>Chaises Haut de Gamme</h1>
+            <p>Fauteuil de bureau et de jeu haut de gamme de GentleChairs, cuir PU noir, rembourrage confortable en mousse froide, 
+            ergonomie supérieure grâce aux possibilités de réglage, roulettes de 60 mm, supports jusqu'à 150 kg. Un ensemble de coussins est inclus dans la livraison.</p>
+            <button>Voir la Collection</button>
+        </div>
+        <div class="image-presentation">
+            <img src="4.png"/>
+        </div>
+    </section>
+<!---------- Avis ---------->
+    <section class="testimonials">
+        <h1>Avis clients</h1>
+        <p>Découvrez nos meilleurs avis et passez le cap</p>
+            <div class="roww">
+                <div class="testimonial-col">
+                    <img src="Jean.png">
+                    <div> 
+                        <p>Très bonne chaise qui vaut sont prix, malgré un défaut sur un accoudoir heureusement pris en charge par la garantie. SAV efficace.</p>
+                        <h3>Jean</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="Benoit.png">
+                    <div>
+                        <p>J'ai bien reçu ma commande, le delais a ete tres rapide et le carton protégés parfaitement la chaise.
+                            Suite à une erreur de ma part, j'ai commandés des accessoires qui etaient dejà livrés avec la chaise, apres avoir envyé un message, j'ai reçu immediatement une etiquette pour renvoyer le colis. Merci à vous, votre service est parfait.</p>
+                        <h3>Benoit</h3>
+                        <i class="fa fa-star"></i>                        
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    <section class="vidéoyoutube">
+    <div class="iframe1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vCSqa3ftuic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </section>
+<!-------- footer ---------->
+    <footer>
+        <div class="column">
+            <h3>INFORMATIONS</h3>
+            <p>Suivre ma commande</p>
+            <p>GentleChairs@gmail.com</p>
+            <p>Si vous avez des questions ou un <br/>besoin particulier n'hésitez pas à nous<br/> contacter par mail à GentleChairs@gmail.com</p>
+        </div>
+        <div class="column">
+            <h3>INFOS</h3>
+            <p>FAQ</p>
+            <p>Avis clients</p>
+            <p>Blog</p>
+            <p>Contact</p>
+        </div>
+        <div class="column">
+            <h3>LIENS RAPIDES</h3>
+            <p>Conditions Générales d'Utilisation</p>
+            <p>Politique de confidentialité</p>
+            <p>Conditions générales de vente</p>
+        </div>
+    </footer>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
